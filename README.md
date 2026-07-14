@@ -187,4 +187,4 @@ static markup for these was intentionally not wired up.
 - [x] Documentation (this file)
 - [x] Pushed to a GitHub repository
 - [x] Deployed to a live URL
-- [ ] Video walkthrough (YouTube, unlisted/private)
+- [x] Video walkthrough (YouTube, unlisted/private)
