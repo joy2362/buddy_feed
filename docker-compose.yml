@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: buddyfeed_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: buddyfeed
+      POSTGRES_USER: buddyfeed
+      POSTGRES_PASSWORD: buddyfeed_local_password
+    ports:
+      - "54329:5432"
+    volumes:
+      - buddyfeed_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U buddyfeed -d buddyfeed"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  buddyfeed_pg_data:

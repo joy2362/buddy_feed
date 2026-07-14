@@ -1,0 +1,197 @@
+/* Supplementary styles for elements the original design didn't cover
+   (real user avatars, validation errors, image previews, likes modal,
+   header user/logout area). Colors reuse the design's own palette. */
+
+._avatar_circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+._field_error {
+  color: #e53e3e;
+  font-size: 13px;
+}
+
+._header_user_area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+._header_user_name {
+  color: var(--color1, #1a202c);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+._logout_btn {
+  padding: 8px 20px;
+  background: var(--color5, #1890ff);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+._logout_btn:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+._feed_page_body {
+  padding: 24px 0 60px;
+}
+
+._feed_status_text {
+  text-align: center;
+  color: var(--color7, #666);
+  padding: 24px 0;
+}
+
+._privacy_select {
+  border: none;
+  background: transparent;
+  color: var(--color7, #666);
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+._post_image_preview_wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 16px;
+}
+
+._post_image_preview {
+  max-height: 220px;
+  border-radius: 8px;
+  display: block;
+}
+
+._remove_preview_btn {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #212121;
+  color: #fff;
+  border: 2px solid #fff;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+._post_body_image {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+._link_btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+._link_btn:hover {
+  text-decoration: underline;
+}
+
+._like_count_link {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  color: var(--color7, #666);
+  cursor: pointer;
+}
+
+._reply_action_link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--color7, #666);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+._reply_action_active {
+  color: var(--color5, #1890ff);
+  font-weight: 600;
+}
+
+._reply_list {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+/* Likes modal */
+._modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+._modal_box {
+  background: var(--bg2, #fff);
+  border-radius: 10px;
+  width: 340px;
+  max-width: 90vw;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+._modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color, #eee);
+}
+
+._modal_header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+._modal_close {
+  background: none;
+  border: none;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color7, #666);
+}
+
+._modal_body {
+  padding: 12px 20px;
+  overflow-y: auto;
+}
+
+._modal_like_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
