@@ -185,6 +185,6 @@ static markup for these was intentionally not wired up.
 
 - [x] Working app (this repo)
 - [x] Documentation (this file)
-- [ ] Pushed to a GitHub repository
-- [ ] Deployed to a live URL
+- [x] Pushed to a GitHub repository
+- [x] Deployed to a live URL
 - [ ] Video walkthrough (YouTube, unlisted/private)
